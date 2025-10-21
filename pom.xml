@@ -1,0 +1,119 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.example</groupId>
+  <artifactId>GestionApprovisionnementsTricol</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>GestionApprovisionnementsTricol</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-context</artifactId>
+          <version>6.2.7</version>
+      </dependency>
+
+      <!-- Spring Beans -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-beans</artifactId>
+          <version>6.2.10</version>
+      </dependency>
+
+      <!-- Spring MVC -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-webmvc</artifactId>
+          <version>6.2.10</version>
+      </dependency>
+
+      <!-- Spring ORM -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-orm</artifactId>
+          <version>5.3.30</version>
+      </dependency>
+
+      <!-- Spring Data JPA -->
+      <dependency>
+          <groupId>org.springframework.data</groupId>
+          <artifactId>spring-data-jpa</artifactId>
+          <version>2.7.0</version>
+      </dependency>
+
+      <!-- Hibernate Core -->
+      <dependency>
+          <groupId>org.hibernate</groupId>
+          <artifactId>hibernate-core</artifactId>
+          <version>5.6.15.Final</version>
+      </dependency>
+
+      <!-- JPA API -->
+      <dependency>
+          <groupId>jakarta.persistence</groupId>
+          <artifactId>jakarta.persistence-api</artifactId>
+          <version>2.2.3</version>
+      </dependency>
+
+      <!-- MySQL Connector -->
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>8.0.33</version>
+      </dependency>
+
+      <!-- Apache DBCP2 for DataSource -->
+      <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-dbcp2</artifactId>
+          <version>2.9.0</version>
+      </dependency>
+
+      <!-- Servlet API (provided by server) -->
+      <dependency>
+          <groupId>jakarta.servlet</groupId>
+          <artifactId>jakarta.servlet-api</artifactId>
+          <version>5.0.0</version>
+          <scope>provided</scope>
+      </dependency>
+
+      <!-- JSTL (si tu utilises JSP) -->
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>jstl</artifactId>
+          <version>1.2</version>
+      </dependency>
+      <dependency>
+          <groupId> org.apache.cassandra</groupId>
+          <artifactId>cassandra-all</artifactId>
+          <version>0.8.1</version>
+
+          <exclusions>
+              <exclusion>
+                  <groupId>org.slf4j</groupId>
+                  <artifactId>slf4j-log4j12</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>log4j</groupId>
+                  <artifactId>log4j</artifactId>
+              </exclusion>
+          </exclusions>
+
+      </dependency>
+
+  </dependencies>
+</project>
