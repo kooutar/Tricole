@@ -1,6 +1,8 @@
 package org.example.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
+
 
 @Entity
 public class Fournisseur {
